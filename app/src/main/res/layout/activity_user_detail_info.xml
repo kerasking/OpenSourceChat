@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_portrait"
+            android:background="@drawable/icon_dface"
+            android:layout_marginRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                tools:text="火蚁"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/frist_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_gender"
+                android:layout_toRightOf="@id/tv_name"
+                android:src="@drawable/icon_boy"
+                android:layout_width="15dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="5dp"
+                tools:text="广东 茂名"
+                android:textColor="@color/second_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/user_info_layout">
+
+        <TextView
+            android:text="加入时间"
+            style="@style/user_info_left_text" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="2010-10-10"
+            style="@style/user_info_right_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/user_info_layout">
+
+        <TextView
+            android:text="开发平台"
+            style="@style/user_info_left_text" />
+
+        <TextView
+            android:id="@+id/tv_devplatform"
+            android:text="2010-10-10"
+            style="@style/user_info_right_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/user_info_layout">
+
+        <TextView
+            android:text="专长领域"
+            style="@style/user_info_left_text" />
+
+        <TextView
+            android:id="@+id/tv_expertise"
+            android:text="2010-10-10"
+            style="@style/user_info_right_text" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_send_message"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_green_bg"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="发送消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_margin="20dp"
+        android:background="@drawable/bt_green_bg"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="关注Ta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

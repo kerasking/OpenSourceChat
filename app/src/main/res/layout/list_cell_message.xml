@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_cell_bg"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/iv_img"
+            style="@style/chat_portrait"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:text="10"
+            android:layout_alignParentTop="true"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_msg_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:id="@+id/tv_name"
+                tools:text="火蚁"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:textColor="@color/frist_text_color"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_time"
+                tools:text="今天 10:10"
+                android:textSize="12sp"
+                android:layout_gravity="top"
+                android:textColor="@color/third_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_content"
+            tools:text="英雄不问出处，赏金花落谁家"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:textColor="@color/second_text_color"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

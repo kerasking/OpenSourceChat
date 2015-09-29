@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            style="@style/chat_bt"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bt_chat_voice" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/icon_input_over"
+            android:layout_marginRight="8dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:maxLines="3"
+                android:textSize="15sp"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_gravity="bottom"/>
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bt_chat_emoji" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageButton
+                style="@style/chat_bt"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/bt_chat_add" />
+
+            <Button
+                android:text="发送"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:background="@drawable/bt_chat_send"
+                android:textSize="15sp"
+                android:layout_width="40dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

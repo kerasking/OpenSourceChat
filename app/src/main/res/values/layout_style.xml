@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="g_w_w">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="g_w_m">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="g_m_w">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="g_m_m">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <!-- 就是按照比例来算的 -->
+    <style name="g_0_w">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="g_w_0">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 头像控件 -->
+    <style name="base_portrait_style">
+        <item name="android:src">@drawable/icon_dface</item>
+        <item name="android:contentDescription">头像</item>
+    </style>
+
+    <style name="main_tab_layout" parent="g_0_w">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="main_tab_text" parent="g_w_w">
+        <item name="android:textColor">@color/main_tab_text_color</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="main_tab_img" parent="g_w_w">
+    </style>
+
+    <style name="user_info_layout" parent="g_m_w">
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@drawable/list_cell_bg</item>
+    </style>
+
+    <style name="user_info_left_text" parent="g_w_w">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">@color/frist_text_color</item>
+    </style>
+
+    <style name="user_info_right_text" parent="g_w_w">
+        <item name="android:textColor">@color/second_text_color</item>
+    </style>
+
+    <style name="chat_bt">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+    
+    <style name="chat_portrait" parent="base_portrait_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="chat_content" parent="g_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/frist_text_color</item>
+        <item name="android:contentDescription">聊天内容</item>
+    </style>
+
+</resources>

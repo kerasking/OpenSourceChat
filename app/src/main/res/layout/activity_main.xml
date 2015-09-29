@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"/>
+
+    <LinearLayout
+        android:background="#fcfcfc"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_chat"
+            style="@style/main_tab_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_chat"
+                    style="@style/main_tab_img"
+                    android:src="@drawable/main_tab_chat" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chat"
+                style="@style/main_tab_text"
+                android:text="源聊" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contact"
+            style="@style/main_tab_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_contact"
+                    style="@style/main_tab_img"
+                    android:src="@drawable/main_tab_contacts" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_contact"
+                style="@style/main_tab_text"
+                android:text="联系人" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_explore"
+            style="@style/main_tab_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_explore"
+                    style="@style/main_tab_img"
+                    android:src="@drawable/main_tab_explore" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_explore"
+                style="@style/main_tab_text"
+                android:text="发现" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my"
+            style="@style/main_tab_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_my"
+                    style="@style/main_tab_img"
+                    android:src="@drawable/main_tab_my" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_my"
+                style="@style/main_tab_text"
+                android:text="我的" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

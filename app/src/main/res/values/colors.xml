@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="window_bg">#ebebeb</color>
+
+    <color name="frist_text_color">#353535</color>
+    <color name="second_text_color">#999999</color>
+    <color name="third_text_color">#bbbbbb</color>
+
+    <color name="colorPrimary">#22292c</color>
+    <color name="colorPrimaryDark">#282c2d</color>
+
+
+</resources>
